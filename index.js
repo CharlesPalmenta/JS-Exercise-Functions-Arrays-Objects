@@ -142,8 +142,9 @@ function getName(name) {
  * passing in [ 'orange', 'grape', 'apple', 'banana', 'mango' ] as the argument,
  * the returned value should be: 2.
 */
-function appleIndex(/* code here */) {
-  /* code here */
+function appleIndex(fruit) {
+  
+  return fruit.indexOf('apple');
 }
 
 /**
@@ -161,8 +162,12 @@ function appleIndex(/* code here */) {
  * passing in [ 'orange', 'apple', 'banana', 'apples', 'apple', 'mango' ] as the argument,
  * the returned value should be: [ false, true, false, false, true, false ].
 */
-function isItAnApple(/* code here */) {
-  /* code here */
+function isItAnApple(fruitArray) {
+  const newArr = [];
+  for ( i=0; i < fruitArray.length("apple"); i++){
+    newArr.push(true)
+  }
+
 }
 
 
