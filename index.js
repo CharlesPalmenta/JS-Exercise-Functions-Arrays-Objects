@@ -230,7 +230,7 @@ function get3rdCar(inventory) {
 */
 function getCarInfoByIndex(inventory, index) {
   let myCar = inventory[index];
-  return `This is a ${myCar.car_make}`;
+  return `This is a ${myCar.car_make} ${myCar.car_model}.`;
 }
 
 /**
@@ -244,8 +244,9 @@ function getCarInfoByIndex(inventory, index) {
  * For example, if getLastCarInfo is invoked passing the inventory inside /data/inventory.js,
  * it will return `This is a Lincoln Town Car`.
 */
-function getLastCarInfo(/* code here */) {
-  /* code here */
+function getLastCarInfo(inventory) {
+  let cars = inventory[inventory.length-1];
+  return `This is a ${cars.car_make} ${cars.car_model}.`
 }
 
 /**
