@@ -164,7 +164,7 @@ function appleIndex(fruit) {
 */
 function isItAnApple(fruitArray) {
   let newArr = [];
-  for ( i=0; i < fruitArray.length; i++){
+  for (let i=0; i < fruitArray.length; i++){
     if (fruitArray[i] === "apple") {
       newArr.push(true);
     } else {
@@ -258,8 +258,12 @@ function getLastCarInfo(inventory) {
  *     (1) an array which is an inventory of cars like the one inside /data/inventory.js.
  * getModelYears returns an array containing all the 'car_year's in the inventory.
 */
-function getModelYears(/* code here */) {
-  /* code here */
+function getModelYears(inventory) {
+  let year = [];
+  for (let i = 0; i < inventory.length; i++) {
+    year.push(inventory[i].car_year);
+  }
+  return year;
 }
 
 /**
